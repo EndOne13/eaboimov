@@ -1,4 +1,17 @@
+/**
+* Package for calculate task.
+*
+* @author Evgenyi Aboimov (mailto:tuz1k@mail.ru)
+* @version $Id$
+* @since 22.04.2017
+*/
 package ru.eaboimov;
+
+/**
+*Эхо!
+*@param начало.
+*@param конец
+*/
 
 public class Calculate {
 	public String echo(String value){
@@ -9,3 +22,4 @@ public class Calculate {
 		System.out.println(calc.echo("aah"));
 	}
 }
+
