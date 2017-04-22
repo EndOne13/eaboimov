@@ -8,9 +8,8 @@
 package ru.eaboimov;
 
 /**
-*Эхо!
-*@param начало.
-*@param конец
+*Main.
+*@param args - args.
 */
 
 public class Calculate {
