@@ -8,14 +8,19 @@
 package ru.eaboimov;
 
 /**
-*Main.
-*@param args - args.
+*String echo.
+*@param value - value.
 */
 
 public class Calculate {
 	public String echo(String value){
 		return String.format("%s %s %s", value, value, value);
 	}
+	/**
+	*Main.
+	*@param arhs - args.
+	*/
+	
 	public static void main(String[] args) {
 		Calculate calc = new Calculate();
 		System.out.println(calc.echo("aah"));
