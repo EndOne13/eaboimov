@@ -1,3 +1,11 @@
+/**
+* Package for calculate task.
+*
+* @author Evgenyi Aboimov (mailto:tuz1k@mail.ru)
+* @version $Id$
+* @since 22.04.2017
+*/
+
 package ru.eaboimov;
 
 import org.junit.Test;
@@ -26,6 +34,10 @@ public class CalculateTest {
 		String result = calc.echo("stop");
 		assertThat(result, is("stop stop stop"));
 	}
+	/**
+	*Test add.
+	*/
+	
 		@Test
 	public void whenSetNullInEchoThenReturnTwoSpaces() {
 		Calculate calc = new Calculate();

@@ -13,12 +13,18 @@ package ru.eaboimov;
 */
 
 public class Calculate {
+	/**
+	*String value.
+	*@return format - format.
+	*/
+	
 	public String echo(String value){
 		return String.format("%s %s %s", value, value, value);
 	}
+	
 	/**
 	*Main.
-	*@param arhs - args.
+	*@param args - args.
 	*/
 	
 	public static void main(String[] args) {
