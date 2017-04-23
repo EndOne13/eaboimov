@@ -16,10 +16,8 @@ import static org.junit.Assert.*;
 
 /**
 *Test
+*@throws CalculateTest
 *
-*@author Evgenyi Aboimov (mailto:tuz1k@mail.ru)
-*@version $Id$
-*@since 0.1
 */
 
 public class CalculateTest {
