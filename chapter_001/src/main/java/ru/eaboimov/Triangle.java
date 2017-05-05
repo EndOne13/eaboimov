@@ -21,10 +21,6 @@ public class Triangle {
   * Точка c.
   */
   private Point c;
-  /**
-  * Периметр.
-  */
-  private double perimetr;
  
   /**
 	 * method Triangle.
@@ -49,8 +45,7 @@ public class Triangle {
     this.perimetr = a.distanceTo(b) + b.distanceTo(c) + c.distanceTo(a);
 	if ((a.distancetoTob) + b.distanceTo(c)) < c.distanceTo(a) {
 	return result -1; 
-  }
-  else { 
+  } else { 
   double return Math.sqrt(perimetr * (perimetr - a.distanceTo(b)) * (perimetr - b.distanceTo(c)) * (perimetr - c.distanceTo(a)));
    }
   }
