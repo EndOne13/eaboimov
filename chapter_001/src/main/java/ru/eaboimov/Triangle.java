@@ -37,7 +37,7 @@ public class Triangle {
     this.b = b;
     this.c = c;
   }
-  
+
  /**
 	 * Метод area.
 	 * @return
@@ -47,8 +47,12 @@ public class Triangle {
   public double area() {
 //calculate the triangle area  
     this.perimetr = a.distanceTo(b) + b.distanceTo(c) + c.distanceTo(a);
-	return area = Math.sqrt(perimetr * (perimetr - a.distanceTo(b)) * (perimetr - b.distanceTo(c)) * (perimetr - c.distanceTo(a)));
-	return 0;
+	if ((a.distancetoTob) + b.distanceTo(c)) < c.distanceTo(a) {
+	return result -1; 
+  }
+  else { 
+  double return Math.sqrt(perimetr * (perimetr - a.distanceTo(b)) * (perimetr - b.distanceTo(c)) * (perimetr - c.distanceTo(a)));
+   }
   }
 }
 
