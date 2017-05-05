@@ -16,7 +16,13 @@ public class Point {
   public int getY() {
      return this.y;
   }
+  public double distanceTo(Point that) {
+	  return -1D;
+  }
+     
+  
   public boolean is(int a, int b){
      return y == a * x + b;
+	 
   }
 }
