@@ -1,4 +1,4 @@
-package ru.eaboimov.triangle;
+package ru.eaboimov;
 
 import org.junit.Test;
 
@@ -22,6 +22,6 @@ public void whenPerimetr() {
 	final double area = 0;
 	
 	assertThat(result, is(area));
-}
+  }
 }
 

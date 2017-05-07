@@ -1,4 +1,4 @@
-package ru.eaboimov.triangle;
+package ru.eaboimov;
 
 /**
 * Class Triangle периметр треугольника.
@@ -8,46 +8,30 @@ package ru.eaboimov.triangle;
 
 
 public class Triangle {
-   
-	/**
-    *Точка a.
-	*/
   private Point a;
-  /**
-  * Точка b.
-  */
   private Point b;
-  /**
-  * Точка c.
-  */
   private Point c;
+  private double perimetr;
  
-  /**
-	 * method Triangle.
-	 * @param a.
-	 * @param b.
-	 * @param c.
-	 */
   public Triangle(Point a, Point b, Point c) {
     this.a = a;
     this.b = b;
     this.c = c;
   }
+   public double distanceTo(Point distanceTo) {
+	  this.distanceTo = distanceTo;
+  }
 
- /**
-	 * Метод area.
-	 * @return
-	 * вычисления периметра.
-	 */
-	 
+
   public double area() {
 //calculate the triangle area  
     this.perimetr = a.distanceTo(b) + b.distanceTo(c) + c.distanceTo(a);
-	if ((a.distancetoTob) + b.distanceTo(c)) < c.distanceTo(a) {
+	if (a.distancetoTo(b) + b.distanceTo(c) < c.distanceTo(a)) {
 	return result -1; 
-  } else { 
-  double return Math.sqrt(perimetr * (perimetr - a.distanceTo(b)) * (perimetr - b.distanceTo(c)) * (perimetr - c.distanceTo(a)));
+  }
+  else { 
+  result Math.sqrt(perimetr * (perimetr - a.distanceTo(b)) * (perimetr - b.distanceTo(c)) * (perimetr - c.distanceTo(a)));
    }
+   return result;
   }
 }
-
