@@ -1,11 +1,25 @@
 package ru.eaboimov;
-
-public class Factorial{
-	public int calc(int n){
+/**
+@Вычисление факториала.
+*/
+public class Factorial {
+	/**
+	Метод calc.
+	@param n n
+	@return factor
+	*/
+	public int calc(int n) {
 		int factor = 1;
-		for (int i = 1; i <= n; i++){
+		/**
+		@param n n
+		@return factor
+		*/
+		for (int i = 1; i <= n; i++) {
 			factor = factor * i;
 		}
+		/**
+		@Ответ
+		*/
 		return factor;
 	}
 }

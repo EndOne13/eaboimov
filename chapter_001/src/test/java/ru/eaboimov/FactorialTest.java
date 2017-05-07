@@ -1,11 +1,14 @@
-package ru.eaboimov;
+﻿package ru.eaboimov;
 
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class FactorialTest{
+/**
+Умножение факториала.
+*/
+public class FactorialTest {
 	/**
 	@Test
 	@factorial 5!=120
@@ -13,15 +16,15 @@ public class FactorialTest{
     @Test
     public void whenCalculateFactorialForFiveThenOneHundreedTwenty() {
 		Factorial fac = new Factorial();
-		assertThat (fac.calc(5), is(120));
+		assertThat(fac.calc(5), is(120));
     }
     /**
 	@Test
-	@factorial 0!=1s
+	@factorial 0!=1
 	*/
     @Test
-    public void whenCalculateFactorialForZeroThenOne() {       
+    public void whenCalculateFactorialForZeroThenOne() {
 		Factorial fac = new Factorial();
-		assertThat (fac.calc(0), is(1));
+		assertThat(fac.calc(0), is(1));
     }
 }
