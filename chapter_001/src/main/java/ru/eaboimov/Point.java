@@ -1,28 +1,22 @@
-package ru.eaboimov.condition;
+package ru.eaboimov;
  
 public class Point {
-   private int x;
-   private int y;
+   private double x;
+   private double y;
  
-   public  Point(int x, int y) {
+   public Point(double x, double y) {
      this.x = x;
      this.y = y;
   }
   
-  public int getX() {
+  public double getX(){
      return this.x;
   }
  
-  public int getY() {
+  public double getY(){
      return this.y;
   }
-  public double distanceTo(Point that) {
-	  return -1D;
-  }
-     
-  
-  public boolean is(int a, int b){
-     return y == a * x + b;
-	 
-  }
+  public double distanceTo(Point point) {
+	  return Math.sqrt(Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2));
+  }         
 }

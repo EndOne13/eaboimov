@@ -1,25 +1,18 @@
-package ru.eaboimov.point;
+package ru.eaboimov;
+
 
 import org.junit.Test;
-
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.hamcrest.number.IsCloseTo.closeTo;
 
-public class PointTest {
+public class PointTest{
     @Test
-    public void whenAddOnePlusOneThenTwo() {
-        Point pointA = new Point (1, 1) ;
-        Point pointB = new Point (2, 1) ;
-        double result = pointA.distanceTo(pointB);
-        double expected = 10D;
-        assertThat(result, is(expected));
-    }
-	 @Test
-    public void whenTestIs() {
-        Point pointA = new Point (1, 1) ;
-        boolean result = pointA.is(2, 3);
-        boolean expected = false;
-        assertThat(result, is(expected));
+    public void whenTestIs(){
+       Point a = new Point(1,1);
+	   Point b = new Point(5,1);
+	   double result = a.distanceTo(b);
+        assertThat(result, closeTo(4.0, 0.5));
     }
 }
 
