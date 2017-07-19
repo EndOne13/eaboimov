@@ -1,37 +1,49 @@
 package ru.eaboimov;
 
 /**
-* Class Triangle периметр треугольника.
-* "author eaboimov
+* Периметр треугольника.
+* @author eaboimov
 * @since 04.05.2017
 */
-
-
 public class Triangle {
-  private Point a;
-  private Point b;
-  private Point c;
-  private double perimetr;
- 
-  public Triangle(Point a, Point b, Point c) {
-    this.a = a;
-    this.b = b;
-    this.c = c;
-  }
-   public double distanceTo(Point distanceTo) {
-	  this.distanceTo = distanceTo;
-  }
-
-
-  public double area() {
-//calculate the triangle area  
-    this.perimetr = a.distanceTo(b) + b.distanceTo(c) + c.distanceTo(a);
-	if (a.distancetoTo(b) + b.distanceTo(c) < c.distanceTo(a)) {
-	return result -1; 
-  }
-  else { 
-  result Math.sqrt(perimetr * (perimetr - a.distanceTo(b)) * (perimetr - b.distanceTo(c)) * (perimetr - c.distanceTo(a)));
-   }
-   return result;
-  }
+	/**
+	 * field a.
+	 */
+	private double a;
+	/**
+	 * field b.
+	 */
+	private double b;
+	/**
+	 * field c.
+	 */
+	private double c;
+	/**
+	 * field perimetr.
+	 */
+	private double perimetr;
+	 /**
+	 * method Triangle.
+	 * @param a first param
+	 * @param b second param
+	 * @param c third param
+	 */
+	public Triangle(int a, int b, int c) {
+	this.a = a;
+	this.b = b;
+	this.c = c;
+	}
+	/**
+	 * method area.
+	 * @return triangle.
+	 */
+	public double area() {
+	//calculate the triangle area
+	this.perimetr = this.a + this.b + this.c;
+	if (this.a + this.b > this.c) {
+		return Math.sqrt(perimetr * (perimetr - this.a) * (perimetr - this.b) * (perimetr - this.c));
+	} else	{
+		return 0;
+	}
+	}
 }
